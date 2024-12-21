@@ -1,4 +1,5 @@
 import { BrowserRouter } from "react-router-dom";
+//eslint-disable-next-line
 import {About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from "./components";
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
                     <Experience />
                     <Tech />
                     <Works />
-                    <Feedbacks />
+                    {/* <Feedbacks /> */}
                 </div>
                 <div className="relative z-0 ">
                     <Contact />

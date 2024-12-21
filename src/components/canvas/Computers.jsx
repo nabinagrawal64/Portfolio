@@ -32,7 +32,7 @@ const ComputersCanvas = () => {
     const [isMobile, setIsMobile] = useState(false);
     
     useEffect(() => {
-        const mediaQuery = window.matchMedia('(max-width: 500px)');
+        const mediaQuery = window.matchMedia('(max-width: 450px)');
         setIsMobile(mediaQuery.matches);
 
         const handleMediaQueryChange = (event) => {
@@ -50,7 +50,7 @@ const ComputersCanvas = () => {
         <Canvas
             frameLoop = "demand"
             shadows
-            dpr={[1, 2]}
+            dpr={isMobile ? 1 : [1, 2]}
             camera={{ position: [20, 3, 5], fov: 25 }}
             gl={{preserveDrawingBuffer: true}}
         >
@@ -58,7 +58,7 @@ const ComputersCanvas = () => {
                 <OrbitControls 
                     enableZoom={false} 
                     maxPolarAngle={Math.PI / 2}
-                    minPolarAngle={Math.PI / 2}    
+                    minPolarAngle={Math.PI / 3}    
                 />   
                 <Computers isMobile={isMobile} />
             </Suspense>
