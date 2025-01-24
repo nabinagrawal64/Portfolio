@@ -59,7 +59,7 @@ const services = [
         icon: backend,
     },
     {
-        title: "Probem Solver",
+        title: "Problem Solver",
         icon: problem,
     },
 ];
