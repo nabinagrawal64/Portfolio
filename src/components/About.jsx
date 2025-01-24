@@ -8,7 +8,6 @@ import { fadeIn, textVariant } from "../utils/motion";
 //eslint-disable-next-line
 const ServiceCard = ({ index, title, icon }) => (
 
-
     <Tilt className='xs:w-[250px] w-full'>
         <motion.div
             variants={fadeIn("right", "spring", index * 0.5, 0.75)}

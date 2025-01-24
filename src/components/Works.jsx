@@ -1,4 +1,4 @@
-import react from 'react';
+import react, { useState } from 'react';
 import { Tilt } from 'react-tilt';
 import { motion } from "framer-motion";
 
@@ -9,8 +9,15 @@ import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
 //eslint-disable-next-line
-const ProjectCard = ({ index, name, description, tags, image, source_code_link }) => (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+const ProjectCard = ({ index, name, description, tags, image, source_code_link }) => {
+
+    const [isExpanded, setIsExpanded] = useState(false);
+
+    const toggleDescription = () => {
+        setIsExpanded((prevState) => !prevState);
+    };
+
+    return (<motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
         <Tilt
             options={{
                 max: 45,
@@ -40,9 +47,25 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
             </div>
 
             {/* project descriptions */}
-            <div className='mt-5'>
-                <h3 className='text-[#ff9e00] text-[24px] font-bold'>{name}</h3>
-                <p className='mt-2 text-secondary text-[14px]' >{description}</p>
+            <div className="mt-5">
+                <h3 className="text-[#ff9e00] text-[24px] font-bold">{name}</h3>
+                <p className="mt-2 text-secondary text-[14px]">
+                    {isExpanded
+                        ? description
+                        : description.length > 50
+                        ? `${description.substring(0, 50)}...`
+                        : description
+                    }
+                    {" "}
+                    {description.length > 50 && (
+                        <button
+                            onClick={toggleDescription}
+                            className="text-[14px] text-lime-50 font-medium mt-2 "
+                        >
+                            {isExpanded ? "See less" : "See more"}
+                        </button>
+                    )}
+                </p>
             </div>
 
             {/* project tags */}
@@ -57,8 +80,8 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
                 ))}
             </div>
         </Tilt>
-    </motion.div>
-)
+    </motion.div>)
+}
 
 //eslint-disable-next-line
 const Works = () => {
@@ -98,7 +121,6 @@ const Works = () => {
                     />
                 ))}
             </div>
-            
         </>
     )
 }

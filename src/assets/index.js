@@ -9,6 +9,10 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import studynotion from "./studynotion.png";
+import chatapp from "./chatapp.png";
+import weather from "./weather.png";
+import mern from "./mern.png";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -33,6 +37,8 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import express from "./tech/express.png";
+import mobiledev from "./mobiledev.png";
+import problem from "./problem.png";
 
 export {
   logo,
@@ -66,4 +72,10 @@ export {
   carrent,
   jobit,
   tripguide,
+  chatapp,
+  weather,
+  studynotion,
+  mern,
+  mobiledev,
+  problem,
 };

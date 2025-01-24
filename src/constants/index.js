@@ -1,27 +1,33 @@
 import {
     mobile,
     backend,
-    creator,
+    // creator,
+    problem,
     web,
     javascript,
     html,
     css,
     reactjs,
-    redux,
+    // redux,
     tailwind,
     nodejs,
     mongodb,
     git,
     docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
-    jobit,
-    tripguide,
-    threejs,
+    // meta,
+    // starbucks,
+    // tesla,
+    mobiledev,
+    // shopify,
+    // carrent,
+    // jobit,
+    // tripguide,
+    // threejs,
+    mern,
     express,
+    chatapp,
+    weather,
+    studynotion,
 } from "../assets";
 
 export const navLinks = [
@@ -53,8 +59,8 @@ const services = [
         icon: backend,
     },
     {
-        title: "Content Creator",
-        icon: creator,
+        title: "Probem Solver",
+        icon: problem,
     },
 ];
 
@@ -75,10 +81,10 @@ const technologies = [
         name: "React JS",
         icon: reactjs,
     },
-    {
-        name: "Redux Toolkit",
-        icon: redux,
-    },
+    // {
+    //     name: "Redux Toolkit",
+    //     icon: redux,
+    // },
     {
         name: "Tailwind CSS",
         icon: tailwind,
@@ -95,10 +101,10 @@ const technologies = [
         name: "MongoDB",
         icon: mongodb,
     },
-    {
-        name: "Three JS",
-        icon: threejs,
-    },
+    // {
+    //     name: "Three JS",
+    //     icon: threejs,
+    // },
     {
         name: "Git",
         icon: git,
@@ -111,55 +117,55 @@ const technologies = [
 
 const experiences = [
     {
-        title: "React.js Developer",
-        company_name: "Starbucks",
-        icon: starbucks,
+        title: "Frontend Developer",
+        company_name: "React",
+        icon: reactjs,
         iconBg: "#383E56",
-        date: "March 2020 - April 2021",
+        // date: "March 2020 - April 2021",
         points: [
             "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+            "Developed responsive, reusable, and scalable web applications using React.js and Redux, optimizing user experience.",
             "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Built highly performant UI components with React and Material-UI/Tailwind CSS, ensuring smooth user interactions and optimized performance.",
         ],
     },
     {
-        title: "React Native Developer",
-        company_name: "Tesla",
-        icon: tesla,
+        title: "Basic App Developer",
+        company_name: "React Native",
+        icon: mobiledev,
         iconBg: "#E6DEDD",
-        date: "Jan 2021 - Feb 2022",
+        // date: "Jan 2021 - Feb 2022",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+            "Developed cross-platform mobile applications using React Native for Android platforms, ensuring consistent performance and user experience.",
+            "Contributed to the improvement of app performance by profiling and optimizing React Native code, leading to better responsiveness and memory management.",
             "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Implemented user authentication with appwrite and clerk. ",
         ],
     },
-    {
-        title: "Web Developer",
-        company_name: "Shopify",
-        icon: shopify,
-        iconBg: "#383E56",
-        date: "Jan 2022 - Jan 2023",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
+    // {
+    //     title: "Web Developer",
+    //     company_name: "Shopify",
+    //     icon: shopify,
+    //     iconBg: "#383E56",
+    //     // date: "Jan 2022 - Jan 2023",
+    //     points: [
+    //         "Developing and maintaining web applications using React.js and other related technologies.",
+    //         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+    //         "Implementing responsive design and ensuring cross-browser compatibility.",
+    //         "Participating in code reviews and providing constructive feedback to other developers.",
+    //     ],
+    // },
     {
         title: "Full stack Developer",
-        company_name: "Meta",
-        icon: meta,
+        company_name: "Mern",
+        icon: mern,
         iconBg: "#E6DEDD",
-        date: "Jan 2023 - Present",
+        // date: "Jan 2023 - Present",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Developed and maintained full-stack web applications using React.js for frontend and Node.js/Express.js for backend, enabling smooth integration between the client and server.",
+            "Integrated MongoDB database, designing schemas, managing migrations, and ensuring optimized data flow across the stack.",
+            "Created responsive and dynamic user interfaces using React.js, Redux, and Tailwind CSS, ensuring cross-browser compatibility and mobile responsiveness.",
+            "Built secure authentication systems with JWT, OAuth, and Passport.js for user login, registration, and authorization.",
         ],
     },
 ];
@@ -192,14 +198,69 @@ const testimonials = [
 ];
 
 const projects = [
+    // weather app
     {
-        name: "Car Rent",
+        name: "Weather App",
         description:
-            "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+            "A weather app that fetches weather information based on the user's current location using a weather API, requiring location access.",
+        tags: [
+            {
+                name: "HTML",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "CSS",
+                color: "green-text-gradient",
+            },
+            {
+                name: "JavaScript",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: weather,
+        source_code_link: "https://github.com/nabinagrawal64/Weather-App/",
+    },
+
+    // chat app
+    {
+        name: "React Chat App",
+        description:
+            "A React chat application with real-time interaction powered by Socket.IO, enabling seamless two-person communication.",
         tags: [
             {
                 name: "react",
                 color: "blue-text-gradient",
+            },
+            {
+                name: "express",
+                color: "orange-text-gradient",
+            },
+            {
+                name: "tailwind",
+                color: "green-text-gradient",
+            },
+            {
+                name: "tailwind",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: chatapp,
+        source_code_link: "https://github.com/nabinagrawal64/React-Chat-App/",
+    },
+
+    // study notion
+    {
+        name: "Study Notion",
+        description:
+            "Study Notion is a platform with dashboards for students, instructors, and admins. Students can buy courses, watch lectures, and complete them. Instructors manage courses, and admins oversee everything. Razorpay API is integrated for secure payments.",
+        tags: [
+            {
+                name: "react",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "express js",
+                color: "orange-text-gradient",
             },
             {
                 name: "mongodb",
@@ -210,50 +271,8 @@ const projects = [
                 color: "pink-text-gradient",
             },
         ],
-        image: carrent,
-        source_code_link: "https://github.com/",
-    },
-    {
-        name: "Job IT",
-        description:
-            "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-        tags: [
-            {
-                name: "react",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "restapi",
-                color: "green-text-gradient",
-            },
-            {
-                name: "scss",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: jobit,
-        source_code_link: "https://github.com/",
-    },
-    {
-        name: "Trip Guide",
-        description:
-            "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-        tags: [
-            {
-                name: "nextjs",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "supabase",
-                color: "green-text-gradient",
-            },
-            {
-                name: "css",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: tripguide,
-        source_code_link: "https://github.com/",
+        image: studynotion,
+        source_code_link: "https://github.com/nabinagrawal64/Study-Notion-Project/",
     },
 ];
 
